@@ -1,0 +1,22 @@
+//breakpoints
+$breakpoint-sm: 375px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1440px;
+$breakpoint-xxl: 1920px;
+
+html, body {
+  scroll-behavior: smooth;
+  margin: 0 auto;
+  
+  
+}
+
+body {
+  font-family: 'Playfair Display';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;  
+  color: rgba(47, 46, 46, 1);
+    
+}

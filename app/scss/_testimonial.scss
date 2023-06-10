@@ -1,0 +1,185 @@
+.testimonial {
+
+    padding: 0 30px 60px;
+    margin-bottom: 25px;
+    position: relative;
+
+
+    @media (min-width: $breakpoint-md) {
+         padding: 0 100px 90px;
+         margin-bottom: 100px;
+    }
+
+
+    &__swiper {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+        display: block;
+    }
+
+    &__title {
+        font-family: "Playfair Display";
+        font-size: 40px;
+        line-height: 44px;
+        font-weight: 900;
+        color: #2f2e2e;
+        margin-bottom: 40px;
+        text-align: center;
+
+        @media (min-width: $breakpoint-md) {
+            font-size: 52px;
+            line-height: 60px;
+            margin-bottom: 90px;
+        }
+    }
+
+    &__team--first {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+
+        @media (min-width: $breakpoint-md) {
+            flex-direction: row;
+            gap: 25px;
+            padding-left: 40px;
+        }
+       
+
+    }
+
+    &__team--sec {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+
+        @media (min-width: $breakpoint-md) {
+            flex-direction: row;
+            gap: 25px;
+            padding-left: 40px;
+        }
+       
+    }
+  
+
+    &__team--third {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+
+        @media (min-width: $breakpoint-md) {
+            flex-direction: row;
+            gap: 25px;
+            padding-left: 40px;
+        }
+       
+    }
+    
+
+    &__team--fourth {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+
+        @media (min-width: $breakpoint-md) {
+            flex-direction: row;
+            gap: 25px;
+            padding-left: 40px;
+        }
+       
+    }
+    
+
+    &__team--img {
+    
+        display: block;
+        height: 151px;
+        overflow: hidden;
+        margin: 0 auto;
+        border-radius: 50%;
+        
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @media (min-width: $breakpoint-lg) {
+            height: 200px;
+        }
+    }
+
+    &__team--block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1 1 50%;
+        
+    }
+
+    &__team--title {
+        font-family: "Playfair Display";
+        font-size: 20px;
+        line-height: 100%;
+        font-weight: 900;
+        color: #2f2e2e;
+        margin-bottom: 16px;
+        letter-spacing: 1px;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+
+        @media (min-width: $breakpoint-md) {
+            font-size: 28px;
+            line-height: 100%;
+            margin-top: 0;
+        }
+        
+    }
+
+    &__team--text {
+        font-family: "Playfair Display";
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        color: #2f2e2e;
+        letter-spacing: 1px;
+        text-align: center;
+
+        @media (min-width: $breakpoint-md) {
+            font-size: 17px;
+            line-height: 21px;
+            
+        }
+    }
+}
+
+
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+
+
+.testimonial__pagination {
+
+    .swiper-pagination {
+        bottom: 0;
+        
+    } 
+
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background: rgb(195, 195, 195);
+      
+
+        &.swiper-pagination-bullet-active {
+        background: rgba(196, 196, 196, 1);
+    }  
+    }
+    
+}

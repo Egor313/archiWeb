@@ -1,0 +1,150 @@
+.header {
+    
+    &__head {
+        margin: 30px 20px 60px;
+        display: flex;
+        align-items: end;
+        position: relative;
+
+        @media (min-width: $breakpoint-md) {
+            margin: 50px 0 91px;
+            justify-content: space-around;
+        }
+    }
+
+    &__logo {
+        font-size: 36px;
+        line-height: 40px;
+        font-family: 'Barlow';
+        font-weight: 700;
+        color: #2F2E2E;
+        
+        
+        & a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+        @media (min-width: $breakpoint-md) {
+            font-size: 42px;
+            line-height: 52px;
+        }
+
+
+       
+        
+    }
+
+    &__burger {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    border: none;
+    outline: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    cursor: pointer;
+    @media (min-width: $breakpoint-md) {
+        display: none;
+    }
+
+    &:active {
+        background: grey;
+    }
+
+    span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 24px;
+        height: 14px;
+        border-top: 2px solid grey;
+        border-bottom: 2px solid grey;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            height: 1.5px;
+            width: 100%;
+            left: 0;
+            transform: translateY(-50%);
+            background: grey;
+
+        }
+    }
+    }
+
+    &__nav {
+        
+    }
+
+    &__nav--list {
+
+        display: none;
+
+        @media (min-width: $breakpoint-md) {
+            display: flex;
+            // margin-right: 106px;
+            
+            &:last-child {
+                margin-right: 0;
+            } 
+        }
+        @media (min-width: $breakpoint-lg) {
+            display: flex;
+            // margin-right: 80px;
+            
+            &:last-child {
+                margin-right: 0;
+            } 
+        }
+        
+
+        
+    }
+
+    &__nav--item {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #2F2E2E;
+
+        @media (min-width: $breakpoint-md) {
+            margin-right: 50px;
+        
+            &:nth-child(4) {
+                margin-right: 30px;
+            } 
+            &:nth-child(5) {
+                margin-right: 0;
+            } 
+        }
+
+        @media (min-width: $breakpoint-lg) {
+            margin-right: 106px;
+        
+            &:nth-child(4) {
+                margin-right: 60px;
+            } 
+           
+        }
+       
+    }
+
+    &__nav--link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    }
+    
+}
+
+.active {
+    font-weight: 700;
+
+}
